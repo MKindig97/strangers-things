@@ -12,11 +12,11 @@ export default function Login(props) {
 
   return (
     <div className= "auth-form-container">
-      <header> <span class="website-name"> Stranger's Things </span>
-      <nav class="Buttons">
+      <header> <span className="website-name"> Stranger's Things </span>
+      <nav className="Buttons">
       <Link className='linkButton1' to={'/'}>HOME</Link>
       <Link className='linkButton2' to={'/posts'}>POSTS</Link>
-      <Link className='linkButton3' to={'/login'}>LOGIN</Link>
+      <Link className='linkButton3' to={'/'}>LOGIN</Link>
       </nav></header>
    <form className="login-form" onSubmit={handleSubmit}>
     <label htmlFor="username">Username</label>

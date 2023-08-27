@@ -1,6 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 import AllPosts from "./pages/AllPosts";
-import SinglePost from './pages/SinglePost';
+import SinglePost from "./pages/SinglePost";
 import Login from './pages/Login';
 import Register from './pages/Register';
 import "./App.css";
@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/login" element={currentForm === "login"? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />} /> 
+        <Route path="/" element={currentForm === "login"? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />} /> 
         <Route path='/posts' element={<AllPosts />} />
         <Route path='/posts/:id' element={<SinglePost />} />
       </Routes>
